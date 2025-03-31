@@ -11,4 +11,23 @@
   .bordered-btn{
     @apply border-1 border-dark-color py-4  px-6 rounded-[15px] text-dark-color cursor-pointer;
   }
+  .dark-btn{
+    @apply  bg-dark-color py-4  px-6 rounded-[15px] text-white cursor-pointer;
+
+  }
+  .h1{
+    @apply font-medium text-[60px] leading-[1.4];
+  }
+  .h2{
+    @apply font-medium text-[40px];
+  }
+  .h3{
+    @apply font-medium text-[30px];
+  }
+  .h4{
+    @apply font-medium text-[20px];
+  }
+  .p{
+    @apply font-normal text-[18px];
+  }
 }
