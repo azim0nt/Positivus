@@ -39,6 +39,12 @@
   .nav-active .nav-links{
     @apply flex flex-col items-center justify-center gap-10;
   }
+<<<<<<< HEAD
+=======
+  .card-style{
+    @apply bg-grey-color rounded-[45px] border-1 border-dark-color ;
+  }
+>>>>>>> 215824c (Restore files after index fix)
 }
 
 
