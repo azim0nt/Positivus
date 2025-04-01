@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+
+@theme{
+  --color-green-color:#b9ff66;
+  --color-grey-color:#f3f3f3;
+  --color-dark-color:#191a23;
+}
+
+@layer utilities{
+  * {
+    transition: all 0.3s ease-in-out;
+}
+  .bordered-btn{
+    @apply border-1 border-dark-color py-4  px-6 rounded-[15px] text-dark-color cursor-pointer;
+  }
+  .dark-btn{
+    @apply  bg-dark-color py-4  px-6 rounded-[15px] text-white cursor-pointer;
+
+  }
+  .h1{
+    @apply font-medium text-[60px] leading-[1.4];
+  }
+  .h2{
+    @apply font-medium text-[40px];
+  }
+  .h3{
+    @apply font-medium text-[30px];
+  }
+  .h4{
+    @apply font-medium text-[20px];
+  }
+  .p{
+    @apply font-normal text-[18px];
+  }
+  .nav-active{
+    @apply fixed h-[90vh] w-full bottom-[-29px] left-0 bg-white z-50 flex flex-col items-center  pt-10 gap-10;
+  }
+  .nav-active .nav-links{
+    @apply flex flex-col items-center justify-center gap-10;
+  }
+  .card-style{
+    @apply bg-grey-color rounded-[45px] border-1 border-dark-color ;
+  }
+}
+
+
+@layer components{
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-marquee {
+    display: inline-block;
+    animation: marquee 7s linear infinite;
+  }
+}
