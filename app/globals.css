@@ -40,3 +40,19 @@
     @apply flex flex-col items-center justify-center gap-10;
   }
 }
+
+
+@layer components{
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-marquee {
+    display: inline-block;
+    animation: marquee 7s linear infinite;
+  }
+}
