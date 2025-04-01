@@ -8,6 +8,9 @@
 }
 
 @layer utilities{
+  * {
+    transition: all 0.3s ease-in-out;
+}
   .bordered-btn{
     @apply border-1 border-dark-color py-4  px-6 rounded-[15px] text-dark-color cursor-pointer;
   }
@@ -29,5 +32,11 @@
   }
   .p{
     @apply font-normal text-[18px];
+  }
+  .nav-active{
+    @apply fixed h-[90vh] w-full bottom-[-29px] left-0 bg-white z-50 flex flex-col items-center  pt-10 gap-10;
+  }
+  .nav-active .nav-links{
+    @apply flex flex-col items-center justify-center gap-10;
   }
 }
