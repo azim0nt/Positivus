@@ -10,6 +10,8 @@
 @layer utilities{
   * {
     transition: all 0.3s ease-in-out;
+
+    
 }
   .bordered-btn{
     @apply border-1 border-dark-color py-4  px-6 rounded-[15px] text-dark-color cursor-pointer;
